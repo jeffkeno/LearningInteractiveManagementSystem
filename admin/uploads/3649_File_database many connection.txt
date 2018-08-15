@@ -1,0 +1,30 @@
+
+$database1 = mysql_connect("localhost","root","");
+$database2 = mysql_connect("localhost","root","");
+$database3 = mysql_connect("localhost","root","");
+
+$database1_select = mysql_select_db("lims_capstone_teacher") or die("Can't Connect To Database",$database1);
+$database2_select = mysql_select_db("lims_capstone_student") or die("Can't Connect To Database",$database2);
+$database3_select = mysql_select_db("lims_capstone_admin") or die("Can't Connect To Database",$database3);
+
+
+
+$hostname1 = 'localhost';
+$hostname2 = '192.168.1.10';
+$username = 'root';
+$password = 'admin';
+$connection1 = mysql_connect($hostname1, $username, $password); 
+$connection2 = mysql_connect($hostname2, $username, $password);
+
+-----------
+
+$hostname1 = 'localhost';
+$hostname2 = '127.0.0.1';
+$hostname3 = '1';
+
+$username = 'root';
+$password = 'admin';
+$connection1 = mysql_connect($hostname1, $username, $password); 
+$connection2 = mysql_connect($hostname2, $username, $password);
+
+

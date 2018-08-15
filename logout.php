@@ -1,0 +1,7 @@
+<?php
+include('dbcon.php');
+session_start();
+session_destroy();
+header('location:index.php');
+mysql_query("TRUNCATE TABLE `sessions`");
+?>
